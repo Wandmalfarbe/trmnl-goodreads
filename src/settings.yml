@@ -1,0 +1,32 @@
+---
+strategy: polling
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+polling_url: https://www.goodreads.com/review/list_rss/{{ gr_account_number }}?shelf={{ shelf }}
+polling_headers: ''
+polling_body: 
+id: 167916
+custom_fields:
+- keyname: ignore
+  name: About This Plugin
+  field_type: author_bio
+  description: 'Show your Goodreads shelves with a large book cover on the left and metadata on the right.'
+  github_url: https://github.com/Wandmalfarbe/trmnl-goodreads
+- keyname: gr_account_number
+  name: Goodreads Account Number
+  field_type: string
+  description: Go to your Goodreads profile and put the numbers from the URL here. For example put <code>99999999</code> when your profile URL is <code>https://www.goodreads.com/user/show/99999999</code>.
+  placeholder: 99999999
+- keyname: shelf
+  name: The shelf to display
+  field_type: select
+  options:
+  - Want to Read: to-read
+  - Currently Reading: currently-reading
+  - Read: read
+  default: read
+  description: The shelf you want to display.
+name: Goodreads
+refresh_interval: 1440

@@ -1,0 +1,20 @@
+<div class="layout layout--row layout--stretch">
+  <div class="flex flex--row flex--stretch gap--large">
+
+    <div class="flex flex--center-x flex--center-y">
+      <img alt="{{ title }}" class="image image-dither rounded--xsmall image--contain img-border" style="width: auto; height: auto; max-width: 100%; max-height: 100%; border: 1px solid black;" src="{{ book.book_large_image_url }}">
+    </div>
+
+    <div class="flex flex--col flex--left">
+      {% if series %}
+      <span class="description">{{ series }}</span>
+      {% endif %}
+      <h1 class="value value--small">{{ title }}</h1>
+      <h2 class="label mb--1">{{ book.author_name }}</h2>
+      <span class="description">{%  render "metadata", book: book %}</span>
+    </div>
+
+  </div>
+</div>
+
+{% render "title_bar", trmnl: trmnl, rss: rss, user: user, shelf: shelf %}
