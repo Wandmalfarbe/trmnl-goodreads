@@ -17,8 +17,8 @@ custom_fields:
 - keyname: gr_account_number
   name: Goodreads Account Number
   field_type: string
-  description: Go to your Goodreads profile and put the numbers from the URL here. For example put 99999999 when your profile URL is https://www.goodreads.com/user/show/99999999.
-  placeholder: 99999999
+  description: Go to your Goodreads profile and put the numbers from the URL here. For example put 26367680 when your profile URL is https://www.goodreads.com/user/show/26367680.
+  placeholder: 26367680
 - keyname: shelf
   name: Shelf
   field_type: select
