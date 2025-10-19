@@ -8,7 +8,7 @@ A TRMNL Plugin for Goodreads. Show your Goodreads shelves with a large book cove
 
 ![full light](img/full-light.png)
 
-![full dark](img/full-dark.png)
+![full dark](img/half-horizontal-alt-light.png)
 
 ## Installation
 

@@ -1,19 +1,7 @@
 <div class="layout layout--row layout--stretch">
   <div class="flex flex--row flex--stretch gap--large mt--2">
 
-    <div class="flex flex--center-x flex--center-y">
-      <img alt="{{ title }}" class="image image-dither rounded--xsmall image--contain img-border" style="width: auto; height: auto; max-width: 100%; max-height: 100%; border: 1px solid black;" src="{{ book.book_large_image_url }}">
-    </div>
-
-    <div class="flex flex--col flex--left mt--10 mb--10 pr--8">
-      {% if series %}
-      <span class="description">{{ series }}</span>
-      {% endif %}
-      <h1 class="value value--small">{{ title }}</h1>
-      <h2 class="label mb--1">{{ book.author_name }}</h2>
-      <div class="description" data-clamp="6"><span class="label" data-clamp="6">{% render "title", book: book %}</span></div>
-      <span class="description">{%  render "metadata", book: book %}</span>
-    </div>
+    {% render "content", trmnl: trmnl, has_single_book: has_single_book, books: books, book: book, size: 'half_vertical' %}
 
   </div>
 </div>

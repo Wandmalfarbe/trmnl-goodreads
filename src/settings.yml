@@ -17,10 +17,10 @@ custom_fields:
 - keyname: gr_account_number
   name: Goodreads Account Number
   field_type: string
-  description: Go to your Goodreads profile and put the numbers from the URL here. For example put <code>99999999</code> when your profile URL is <code>https://www.goodreads.com/user/show/99999999</code>.
+  description: Go to your Goodreads profile and put the numbers from the URL here. For example put 99999999 when your profile URL is https://www.goodreads.com/user/show/99999999.
   placeholder: 99999999
 - keyname: shelf
-  name: The shelf to display
+  name: Shelf
   field_type: select
   options:
   - Want to Read: to-read
@@ -28,5 +28,19 @@ custom_fields:
   - Read: read
   default: read
   description: The shelf you want to display.
+- keyname: layout
+  name: Layout
+  field_type: select
+  options:
+  - '1 Book: Image Left, Metadata Right': large
+  - Cover Only: cover_only
+  default: large
+  description: The layout for your shelf.
+- keyname: layout_number_of_books
+  name: Number of Books
+  field_type: number
+  placeholder: 3
+  default: 3
+  description: The number of books to display. <b>Only has an effect when "Layout" is "Cover Only"</b>.
 name: Goodreads
 refresh_interval: 1440

@@ -10,6 +10,8 @@ watch:
 custom_fields:
   gr_account_number:
   shelf: read
+  layout: large
+  layout_number_of_books: 3
 
 time_zone: Europe/Berlin
 
