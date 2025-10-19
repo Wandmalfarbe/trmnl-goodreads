@@ -7,7 +7,7 @@ polling_verb: get
 polling_url: https://www.goodreads.com/review/list_rss/{{ gr_account_number }}?shelf={{ shelf }}
 polling_headers: ''
 polling_body: 
-id: 167916
+id: 168273
 custom_fields:
 - keyname: ignore
   name: About This Plugin
