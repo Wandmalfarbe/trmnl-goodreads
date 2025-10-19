@@ -12,7 +12,7 @@ custom_fields:
 - keyname: ignore
   name: About This Plugin
   field_type: author_bio
-  description: 'Show your Goodreads shelves with a large book cover on the left and metadata on the right.'
+  description: Show your Goodreads shelves with a large book cover on the left and metadata on the right.
   github_url: https://github.com/Wandmalfarbe/trmnl-goodreads
 - keyname: gr_account_number
   name: Goodreads Account Number
