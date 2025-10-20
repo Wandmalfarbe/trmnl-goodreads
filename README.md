@@ -1,14 +1,16 @@
-<img src="icon.png" align="right" height="110"/>
+<img src="icon.png" align="right" height="60"/>
 
 # trmnl-goodreads
 
 A TRMNL Plugin for Goodreads. Show your Goodreads shelves with a large book cover on the left and metadata on the right.
 
+![full light](assets/open-graph.png)
+
 ## Preview
 
-![full light](img/full-light.png)
+![full light](assets/full-light.png)
 
-![full dark](img/half-horizontal-alt-light.png)
+![full dark](assets/half-horizontal-alt-light.png)
 
 ## Installation
 
@@ -23,17 +25,17 @@ A TRMNL Plugin for Goodreads. Show your Goodreads shelves with a large book cove
 
 ## Previews (Light Mode)
 
-![full light](img/full-light.png)
-![half horizontal light](img/half-horizontal-light.png)
-![half vertical light](img/half-vertical-light.png)
-![quadrant light](img/quadrant-light.png)
+![full light](assets/full-light.png)
+![half horizontal light](assets/half-horizontal-light.png)
+![half vertical light](assets/half-vertical-light.png)
+![quadrant light](assets/quadrant-light.png)
 
 ## Previews (Dark Mode)
 
-![full dark](img/full-dark.png)
-![half horizontal dark](img/half-horizontal-dark.png)
-![half vertical dark](img/half-vertical-dark.png)
-![quadrant dark](img/quadrant-dark.png)
+![full dark](assets/full-dark.png)
+![half horizontal dark](assets/half-horizontal-dark.png)
+![half vertical dark](assets/half-vertical-dark.png)
+![quadrant dark](assets/quadrant-dark.png)
 
 ## License
 
