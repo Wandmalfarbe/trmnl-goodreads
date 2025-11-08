@@ -41,6 +41,6 @@ custom_fields:
   field_type: number
   placeholder: 3
   default: 3
-  description: The number of books to display. <b>Only has an effect when "Layout" is "Cover Only"</b>.
+  description: 'The number of books to display. There is a maximum number of books that can be displayed depending on the size: full = 3, half_horizontal = 6, quadrant = 3, half_vertical = 2. Any value higher gets clamped to this maximum number.<br><br><b>This option only has an effect when "Layout" is "Cover Only"</b>'
 name: Goodreads
 refresh_interval: 1440

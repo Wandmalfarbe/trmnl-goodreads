@@ -64,7 +64,18 @@ which has a value like "Michael's bookshelf: currently-reading".
     <img alt="{{ book.title }}" class="image image-dither rounded--xsmall image--contain img-border" style="width: auto; height: auto; max-width: 100%; max-height: 100%; border: 1px solid black;" src="{{ book.book_large_image_url }}">
   </div>
 {% else %}
-  {% for book in books limit: trmnl.plugin_settings.custom_fields_values.layout_number_of_books %}
+  {% case size %}
+    {% when "full" %}
+      {% assign max_books_per_size = 3 %}
+    {% when "half_horizontal" %}
+      {% assign max_books_per_size = 6 %}
+    {% when "quadrant" %}
+      {% assign max_books_per_size = 3 %}
+    {% else %}
+      {% assign max_books_per_size = 2 %}
+  {% endcase %}
+  {% assign max_books = trmnl.plugin_settings.custom_fields_values.layout_number_of_books | at_most: max_books_per_size %}
+  {% for book in books limit: max_books %}
     <div class="flex flex--center-x flex--center-y">
       <img alt="{{ book.title }}" class="image image-dither rounded--xsmall image--contain img-border" style="width: auto; height: auto; max-width: 100%; max-height: 100%; border: 1px solid black;" src="{{ book.book_large_image_url }}">
     </div>
